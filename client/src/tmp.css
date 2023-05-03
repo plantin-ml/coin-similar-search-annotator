@@ -1,0 +1,121 @@
+@import '~antd/dist/antd.css';
+
+.App {
+  text-align: center;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.selected-img {
+  background-color: #61dafb;
+}
+
+.image__target p {
+  /* color: white; */
+}
+.ant-layout-sider {
+  background-color:#f0f2f5;
+}
+.ant-layout-sider {
+  border-right: 1px solid hsl(210,8%,85%);
+}
+.ant-layout-sider-children {
+  padding: 10px;
+}
+
+.classElementItem {
+  cursor: pointer;
+  margin: 2px 0;
+}
+.classElementItem:hover {
+  color: red;
+}
+.elmentLists .active{
+  color: red;
+}
+.elmentLists {
+  overflow-y: scroll;
+  max-height: 600px;
+  list-style-type: none;
+  padding: 0 0 0 10px;
+}
+
+
+.imgMetaInfo {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.4);
+}
+.imgMetaInfo p {
+  margin: 0;
+  font-size: 10px;
+  color: bisque;
+}
+.imgMetaInfoClassName {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 18px;
+  background: rgba(0,0,0,0.6);
+}
+.imgMetaInfoClassName p {
+  text-align: center;
+  font-weight: bold;
+}
+.simImageItem {
+  position: relative;
+}
+.simImageItem img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+.simImageItem .overflow {
+  position: absolute;
+  top: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0,0,0, 0.8);
+}

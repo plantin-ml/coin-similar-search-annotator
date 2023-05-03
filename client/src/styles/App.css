@@ -1,0 +1,59 @@
+.imageListContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /* max-width: 800px; */
+}
+.imageListContainer .imageItem {
+  margin: 4px;
+  border-radius: 2px;
+  height: 160px;
+  width: 160px;
+  background-size: cover;
+  background-position: center center;
+  background-color: #F0F0F0;
+}
+
+.simImageItem {
+  cursor: pointer;
+  position: relative;
+}
+.simImageItem img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+.simImageItem .overflow {
+  position: absolute;
+  top: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0,0,0, 0.8);
+}
+.imgMetaInfo {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-left: 8px;
+  background: rgba(0,0,0,0.4);
+}
+.imgMetaInfo p {
+  margin: 0;
+  font-size: 10px;
+  color: bisque;
+}
+.imgMetaInfoClassName {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 18px;
+  background: rgba(0,0,0,0.6);
+}
+.imgMetaInfoClassName p {
+  text-align: center;
+  font-weight: bold;
+}

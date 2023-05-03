@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-ss-annotator-api-deployment
+  labels:
+    name: api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api
+  template:
+    metadata:
+      labels:
+        app: api
+    spec:
+      containers:
+      - name: api
+        image: 414252687335.dkr.ecr.us-east-1.amazonaws.com/similar-search-annotator:server_01
+        env:
+          - name: RETRIEVE_COINS_API_BASE_URL
+            value: http://coin-stage-app-yatai.models.prod-ml.myplantin.com
+      restartPolicy: Always

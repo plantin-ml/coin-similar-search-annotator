@@ -1,0 +1,68 @@
+.imageListContainer {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: calc(100vh - 200px);
+}
+.mainImageListContainer{
+  overflow-y: scroll;
+}
+
+.imageListContainer .imageItem {
+  margin: 6px;
+  padding: 4px;
+  border-radius: 2px;
+  /* background-color: #F0F0F0; */
+  background-color: #fff;
+  position: relative;
+  object-fit: cover;
+}
+.imageItem .image {
+  height: 224px;
+  width: 224px;
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 10px;
+}
+.imageItem p {
+  line-height: 14px;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 220px;
+}
+
+.imageItem .itemTitle{
+  /* text-align: center; */
+  margin-bottom: 2px;
+  font-weight: 500;
+  line-height: 36px;
+  cursor: pointer;
+}
+.imageItemActive{
+  background: rgba(0,0,0, 0.1)!important;
+}
+.imageItem .itemTitle label{
+  margin-right: 6px;
+}
+.coinGroup{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /* align-items: flex-start; */
+  background: rgba(79, 195, 12, 0.1);
+  margin: 10px;
+  border-radius: 2px;
+  padding-top: 20px;
+}
+.coinGroupToolbar{
+  display: block;
+  width: 160px;
+  height: 10px;
+  position: relative;
+  top: 5px;
+  left: 5px;
+}

@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-ss-annotator-client-deployment
+  labels:
+    name: client
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: client
+  template:
+    metadata:
+      labels:
+        app: client
+    spec:
+      containers:
+      - name: client
+        image: 414252687335.dkr.ecr.us-east-1.amazonaws.com/similar-search-annotator:client_02
+        imagePullPolicy: IfNotPresent
+        env:
+          - name: REACT_APP_API_URL
+            value: http://api.ss-annotator.app.prod-ml.myplantin.com/api/v1
+      restartPolicy: Always

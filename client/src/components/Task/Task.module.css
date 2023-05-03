@@ -1,0 +1,85 @@
+.tableMetaInformation {
+  margin: 10px auto;
+  color: #333;
+  line-height: 20px;
+}
+.tableMetaInformation td {
+  text-align: left;
+  padding: 0 10px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f0f0f0;
+}
+.imageListContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /* max-width: 800px; */
+}
+.imageListContainer .imageItem {
+  margin: 6px;
+  padding: 4px;
+  border-radius: 2px;
+  /* background-color: #F0F0F0; */
+  background-color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+.imageItem .image {
+  height: 224px;
+  width: 224px;
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 10px;
+}
+.imageItem p {
+  line-height: 14px;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 220px;
+}
+
+.imageItem .itemTitle{
+  /* text-align: center; */
+  margin-bottom: 2px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.imageItem .overflow {
+  position: absolute;
+  border-radius: 2px;
+  top: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0,0,0, 0.5);
+}
+.header {
+  color: '#fff';
+  height: 64;
+  padding-inline: 50;
+  line-height: '64px';
+  background-color: '#7dbcea';
+  position: 'sticky';
+  z-index: 1;
+  width: '100%';
+};
+.content {
+  padding: '10px';
+  color: '#fff';
+  overflow-y: 'scroll';
+  height: 'calc(100vh - 64px)',
+};
+.sider {
+  line-height: '120px';
+  color: '#fff';
+  background: 'rgba(255, 255, 255, 0.2)';
+  text-align: 'center';
+};
+.toolsBar {
+  padding: '10px';
+};
